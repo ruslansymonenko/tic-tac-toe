@@ -6,20 +6,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tic Tac Toe</title>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
   <div class="wrapper">
     <div class="app">
       <div class="game-result">
-        <div class="game-result__player">0</div>
+        <div class="game-result__player">
+          <span class="player-name">Player</span>
+          <div class="result" id="playerResult">0</div>
+        </div>
         <span>:</span>
-        <div class="game-result__computer">0</div>
+        <div class="game-result__computer">
+          <div class="result" id="computerResult">0</div>
+          <span class="player-name">Computer</span>
+        </div>
       </div>
       <div class="game-field">
         <div class="game-row">
-          <div class="game-cell" data-cellNumber="cell1"></div>
-          <div class="game-cell" data-cellNumber="cell2"></div>
+          <div class="game-cell" data-cellNumber="cell1">X</div>
+          <div class="game-cell" data-cellNumber="cell2">0</div>
           <div class="game-cell" data-cellNumber="cell3"></div>
         </div>
         <div class="game-row">
@@ -34,12 +43,15 @@
         </div>
       </div>
       <div class="game-controllers">
-        <div class="game-controllers__mode">
-          <input type="checkbox">
-        </div>
+        <span class="game-mode game-mode-x">X</span>
+        <span class="game-mode game-mode-o">0</span>
+        <label class="game-controllers__mode">
+          <input class="game-controllers__mode-check" type="checkbox">
+          <span class="mode-check_slider"></span>
+        </label>
         <div class="game-controllers__btns">
-          <button class="game-controllers__btn btn__game"></button>
-          <button class="game-controllers__btn btn__reset"></button>
+          <button class="game-controllers__btn btn__game">Play</button>
+          <button class="game-controllers__btn btn__reset">Reset</button>
         </div>
       </div>
     </div>
