@@ -1,0 +1,103 @@
+html{
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+**::before {
+  box-sizing: inherit;
+}
+
+ul[class],
+ol[class]{
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+ul[class] {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+body{
+  font-size: 16px;
+  font-style: normal;
+  line-height: 16px;
+}
+
+.wrapper {
+  min-height: 100vh;
+  background-color: #C8E3D4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.app {
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+  height: 600px;
+  border: 1px solid black;
+  padding: 10px;
+}
+.game-result {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+}
+.game-result__player {
+  margin-right: 15px;
+}
+.game-result__computer {
+  margin-left: 15px;
+}
+.game-field {
+  height: 380px;
+}
+.game-row {
+}
+.game-cell {
+}
+.game-controllers {
+  height: 100px;
+}
+.game-controllers__mode {
+}
+.game-controllers__btns {
+}
+.game-controllers__btn {
+}
+.btn__game {
+}
+.btn__reset {
+}
